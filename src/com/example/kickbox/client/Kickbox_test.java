@@ -95,6 +95,7 @@ public class Kickbox_test implements EntryPoint {
 			 */
 			public void onClick(ClickEvent event) {
 				sendNameToServer();
+				TestAdd.testServer(nameField.getText(), null);
 			}
 
 			/**
@@ -103,6 +104,7 @@ public class Kickbox_test implements EntryPoint {
 			public void onKeyUp(KeyUpEvent event) {
 				if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
 					sendNameToServer();
+					TestAdd.testServer(nameField.getText(), null);
 				}
 			}
 
