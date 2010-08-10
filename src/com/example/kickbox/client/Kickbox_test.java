@@ -42,6 +42,7 @@ public class Kickbox_test implements EntryPoint {
 		// lalala
 		// muh
 		// blabla
+		// mumu
 		final Button sendButton = new Button("Send");
 		final TextBox nameField = new TextBox();
 		nameField.setText("Georg");
