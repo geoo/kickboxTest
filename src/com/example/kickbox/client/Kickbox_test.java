@@ -40,7 +40,6 @@ public class Kickbox_test implements EntryPoint {
 	 */
 	public void onModuleLoad() {
 		// lalala
-		// muh
 		// blabla
 		final Button sendButton = new Button("Send");
 		final TextBox nameField = new TextBox();
