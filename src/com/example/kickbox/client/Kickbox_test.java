@@ -25,6 +25,7 @@ public class Kickbox_test implements EntryPoint {
 	 * The message displayed to the user when the server cannot be reached or
 	 * returns an error.
 	 */
+
 	private static final String SERVER_ERROR = "An error occurred while "
 			+ "attempting to contact the server. Please check your network "
 			+ "connection and try again.";
@@ -39,10 +40,8 @@ public class Kickbox_test implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
-		// lalala
-		// blabla
-		// mumu
-		final Button sendButton = new Button("Send");
+
+		final Button sendButton = new Button("send");
 		final TextBox nameField = new TextBox();
 		nameField.setText("Georg");
 		final Label errorLabel = new Label();
@@ -95,7 +94,6 @@ public class Kickbox_test implements EntryPoint {
 			 */
 			public void onClick(ClickEvent event) {
 				sendNameToServer();
-				TestAdd.testServer(nameField.getText(), null);
 			}
 
 			/**
@@ -104,7 +102,6 @@ public class Kickbox_test implements EntryPoint {
 			public void onKeyUp(KeyUpEvent event) {
 				if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
 					sendNameToServer();
-					TestAdd.testServer(nameField.getText(), null);
 				}
 			}
 
