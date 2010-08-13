@@ -11,6 +11,9 @@
   <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
   <!-- Other module inherits                                      -->
 
+  <inherits name="com.google.gwt.i18n.I18N"/>
+  <extend-property name="locale" values="de"/>
+
   <!-- Specify the app entry point class.                         -->
   <entry-point class='com.example.kickbox.client.Kickbox_test'/>
 

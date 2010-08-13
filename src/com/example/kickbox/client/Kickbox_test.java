@@ -35,13 +35,15 @@ public class Kickbox_test implements EntryPoint {
 	 */
 	private final GreetingServiceAsync greetingService = GWT
 			.create(GreetingService.class);
-
+	 private MyConstants constants = GWT.create(MyConstants.class);
 	/**
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
 
-		final Button sendButton = new Button("send");
+	    RootPanel.get("titel").add(new Label(constants.titel()));
+		final Button sendButton = new Button(constants.send());
+		
 		final TextBox nameField = new TextBox();
 		nameField.setText("Georg");
 		final Label errorLabel = new Label();
