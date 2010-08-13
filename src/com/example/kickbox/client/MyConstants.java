@@ -7,5 +7,7 @@ public interface MyConstants extends Constants{
 	String send();
 	
 	String titel();
+	
+	String enterName();
 
 }

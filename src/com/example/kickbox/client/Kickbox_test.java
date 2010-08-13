@@ -43,6 +43,8 @@ public class Kickbox_test implements EntryPoint {
 	public void onModuleLoad() {
 
 	    RootPanel.get("titel").add(new Label(constants.titel()));
+	    RootPanel.get("enterName").add(new Label(constants.enterName()));
+
 		final Button sendButton = new Button(constants.send());
 		
 		final TextBox nameField = new TextBox();
